@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <button onclick="calcular()">Area do Triangulo</button>
+        <div id='outlook'></div>
+        <script>
+            var outlook = document.querySelector('#outlook');
+            var base = parseFloat(prompt('Informe a base: '));
+            var altura = parseFloat(prompt('Informe a altura: '));
+            
+            function mostrar(area){
+                outlook.innerHTML = area;
+            }
+            
+            function calcular(){
+                try{
+                    var area = parseFloat(areaTriangulo(altura,base));
+                }catch(e){
+                    //console.log(e);
+                    alert(e);
+                    return;
+                }
+            mostrar(area);
+            }
+            
+            function areaTriangulo(a,b){
+                
+                if(isNaN(a) || isNaN(b)){
+                    throw new Error('Valor(es) inválido(s)!');
+                }
+                return (a * b) / 2;
+            }
+        </script>
+    </body>
+</html>

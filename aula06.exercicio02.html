@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <div id='output'></div>
+        <script>
+            c1= new Object();
+            c1.nome='lucas';
+            c1.email='lucas@email.com';
+            
+            c2= new Object();
+            c2.nome='maria';
+            c2.email='maria@email.com';
+            
+            c3= new Object();
+            c3.nome='jose';
+            c3.email='jose@email.com';
+            
+            
+            var contatos = [c1,c2,c3];
+            msg = '';
+            
+            var i=0;
+            while(contatos[i]){
+                msg+='Nome: '+contatos[i].nome+' Email: '+contatos[i].email+'<br>';
+                i++;
+            }
+            document.querySelector('#output').innerHTML = msg;
+        </script>
+    </body>
+</html>

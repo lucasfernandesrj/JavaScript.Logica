@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <script>
+            var n1 = parseInt(prompt("Jogador 1 - Informe um valor"));
+            var n2 = parseInt(prompt("Jogador 2 - Informe um valor"));
+            if(n1 == n2){
+                alert("Empate!");
+            }else{
+            var aleatorio = parseInt(Math.random() * 2);
+                if(aleatorio == 0){ 
+                    alert("O vencedor será o Menor!")
+                    if(n1 < n2){
+                        alert("O vencedor é o Jogador 1!");
+                    }else{
+                        alert("O vencedor é o Jogador 2!");
+                    }
+                }else{
+                    alert("O vencedor será o Maior!")
+                    if(n1 > n2){
+                        alert("O vencedor é o Jogador 1!");
+                    }else{
+                        alert("O vencedor é o Jogador 2!");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

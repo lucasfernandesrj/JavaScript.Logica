@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <button onclick="mostrarTabuada()">Mostrar</button>
+        <button onclick="apagarTabuada()">Apagar</button>
+        <div id='output'></div>
+        <script>
+            var output = document.querySelector('#output');
+            var mensagem = '';
+            function mostrarTabuada(){
+                var n = parseInt(prompt("Informe um número"));
+                apagarTabuada();
+                var i = 1;
+                while(i <= 10){
+                    mensagem += i +' x '+ n +' = '+ (i*n) +'<br>';
+                    i++;
+                }
+                output.innerHTML = mensagem;
+            }
+            function apagarTabuada(){
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }
+        </script>
+    </body>
+</html>

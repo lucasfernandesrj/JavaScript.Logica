@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <button onclick="calcular('+')"> + </button>
+        <button onclick="calcular('-')"> - </button>
+        <button onclick="calcular('*')"> * </button>
+        <button onclick="calcular('/')"> : </button>
+        <div id='output'></div>
+        <script>
+            var output = document.querySelector('#output');
+            var num1 = parseFloat(prompt("Informe uma número"));
+            function mostrar(){
+                output.innerHTML = num1;
+            }
+            function calcular(simbolo){
+                var num2 = parseFloat(prompt("Informe outro número:"));
+                switch(simbolo){
+                    case '+':
+                        num1 += num2;
+                        break;
+                    case '-':
+                        num1 -= num2;
+                        break;
+                    case '*':
+                        num1 *= num2;
+                        break;
+                    case '/':
+                        num1 /= num2;
+                        break;   
+                }
+                mostrar();
+            }
+        </script>
+    </body>
+</html>

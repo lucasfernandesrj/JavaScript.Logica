@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <div id='output'></div>
+        <script>
+            var msg = '';
+            
+            var tv = new Object();
+            tv.nome = 'Tv';
+            tv.preco = parseFloat(2000);
+            tv.qtd = 45;
+            
+            var notebook = new Object();
+            notebook.nome = 'Notebook';
+            notebook.preco = parseFloat(1500);
+            notebook.qtd = 33;
+            
+            var smartphone = new Object();
+            smartphone.nome = 'Smartphone';
+            smartphone.preco = parseFloat(1000);
+            smartphone.qtd = 251;
+            
+            mostrar(tv);
+            mostrar(notebook);
+            mostrar(smartphone);
+                  
+            var output = document.querySelector('#output');
+            output.innerHTML = msg.toUpperCase();
+
+            function mostrar(obj){
+                msg+= 'Nome: '+obj.nome+' - Preço: R$'+obj.preco+' - Quantidade em estoque: '+obj.qtd+'<br>';
+            }
+        </script>
+    </body>
+</html>

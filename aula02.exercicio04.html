@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+            <script>
+            var n1 = parseFloat(prompt('digite um número'));
+            var n2 = parseFloat(prompt('digite outro número')); 
+            if(n1 <= 10 && n1 > 0 && n2 <= 10 && n2 > 0){
+                var media = (n1 + n2) / 2;
+                if(media == 6 || media == 7 || media ==  8 || media == 9 || media == 10){
+                    alert("Parabéns! Você foi aprovado");
+                } else {
+                    alert("Descupe, mas não foi dessa vez");
+                }
+                /*
+                if(n1 === 0 || n2 === 0 || media <=5){
+                    alert("Descupe, mas não foi dessa vez");
+                }else{
+                    alert("Parabéns! Você foi aprovado");
+                }*/
+            }else{
+                alert("Valores inválidos!");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação JavaScript</h1>
+        <script>
+            var numero = parseFloat(prompt("Digite um número"));
+            for(var i = 1;i<= 100;i++){
+                document.write(numero+" x "+i+" = "+(numero*i)+"<br>");
+                if(i%10 == 0){
+                    document.write("<hr>");
+                }
+            }
+            document.write("Saiu do loop");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Curso Javascript Completo 2018</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <h1>Curso Javascript Completo 2018</h1>
+      <input type="text" id="txtNome" value="digite um nome">
+      <input type="text" id="txtSobrenome" value="digite um sobrenome">
+      
+      <button onclick="mostrar()">Confirmar</button>
+      <div id="msg"></div>
+      <script>
+          function mostrar(){
+          
+          var txtNome2 = document.querySelector('#txtNome');
+          var nome = txtNome2.value;
+          
+          var txtSobrenome2 = document.querySelector('#txtSobrenome');
+          var sobrenome = txtSobrenome2.value;
+          
+          var completo = nome+' '+sobrenome;
+          document.querySelector('#msg').innerHTML = 'Bom dia , <b>'+completo+'</b>!';   
+          }
+      </script>
+    </body>
+</html>
